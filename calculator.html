@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор — ЛР №4, завдання 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calc-page">
+        <h1>Калькулятор</h1>
+
+        <div class="calc" id="calc">
+            <div class="calc-screen">
+            <div class="calc-expression" id="expression"></div>
+            <div class="calc-display" id="display">0</div>
+            </div>
+
+            <div class="calc-keys">
+            <button data-action="clear" class="fn">C</button>
+            <button data-action="backspace" class="fn">⌫</button>
+            <button data-action="sqrt" class="fn">√</button>
+            <button data-action="operator" data-value="^" class="op">xʸ</button>
+
+            <button data-action="digit" data-value="7">7</button>
+            <button data-action="digit" data-value="8">8</button>
+            <button data-action="digit" data-value="9">9</button>
+            <button data-action="operator" data-value="/" class="op">÷</button>
+
+            <button data-action="digit" data-value="4">4</button>
+            <button data-action="digit" data-value="5">5</button>
+            <button data-action="digit" data-value="6">6</button>
+            <button data-action="operator" data-value="*" class="op">×</button>
+
+            <button data-action="digit" data-value="1">1</button>
+            <button data-action="digit" data-value="2">2</button>
+            <button data-action="digit" data-value="3">3</button>
+            <button data-action="operator" data-value="-" class="op">−</button>
+
+            <button data-action="digit" data-value="0">0</button>
+            <button data-action="dot">.</button>
+            <button data-action="operator" data-value="%" class="op">%</button>
+            <button data-action="operator" data-value="+" class="op">+</button>
+
+            <button data-action="sign" class="fn">±</button>
+            <button data-action="equals" class="eq">=</button>
+            </div>
+        </div>
+
+        <p><a href="index.html">← До завдань 1–8</a></p>
+    </main>
+
+  <script src="js/calculator.js"></script>
+</body>
+</html>
