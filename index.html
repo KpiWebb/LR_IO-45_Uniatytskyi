@@ -1,33 +1,106 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ЛР №4 — Основи JavaScript</title>
-    <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ЛР №4–5 — JavaScript</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Лабораторна робота №4</h1>
-        <p>Основи JavaScript у HTML-документі. Шаблонні рядки, керування порядком обчислень, масиви, методи масивів, функції.</p>
-        <p>Натисни кнопку завдання й дивись результат у вкладці <strong>Console</strong> (F12 → Console).</p>
+  <main>
+    <h1>Лабораторні роботи з JavaScript</h1>
+    <p>Натисни кнопку завдання й дивись результат у вкладці <strong>Console</strong> (F12 → Console).</p>
+    <p><button id="clear-console" class="secondary-btn">Очистити консоль</button></p>
 
-        <section class="task-buttons">
-            <button data-task="1">Завдання 1</button>
-            <button data-task="2">Завдання 2</button>
-            <button data-task="3">Завдання 3</button>
-            <button data-task="4">Завдання 4</button>
-            <button data-task="5">Завдання 5</button>
-            <button data-task="6">Завдання 6</button>
-            <button data-task="7">Завдання 7</button>
-            <button data-task="8">Завдання 8</button>
-            <button id="clear-console" class="secondary">Очистити консоль</button>
-        </section>
+    <section class="lab-section">
+      <h2>ЛР №4. Основи JavaScript</h2>
+      <div class="task-buttons">
+        <button data-task="1">Завдання 1</button>
+        <button data-task="2">Завдання 2</button>
+        <button data-task="3">Завдання 3</button>
+        <button data-task="4">Завдання 4</button>
+        <button data-task="5">Завдання 5</button>
+        <button data-task="6">Завдання 6</button>
+        <button data-task="7">Завдання 7</button>
+        <button data-task="8">Завдання 8</button>
+      </div>
+      <p><a href="calculator.html">Завдання 9: калькулятор</a></p>
+    </section>
 
-        <p><a href="calculator.html">Завдання 9: калькулятор</a></p>
-    </main>
+    <section class="lab-section">
+      <h2>ЛР №5. Об'єкти, callback, стрілочні функції, методи масивів</h2>
+      <div class="task-group">
+        <h3>Об'єкт</h3>
+        <div class="task-buttons">
+          <button data-task5="object3" data-label="Об'єкт · Завдання 3">Завдання 3</button>
+          <button data-task5="object7" data-label="Об'єкт · Завдання 7">Завдання 7</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Методи об'єкта</h3>
+        <div class="task-buttons">
+          <button data-task5="methods3" data-label="Методи об'єкта · Завдання 3">Завдання 3</button>
+          <button data-task5="methods10" data-label="Методи об'єкта · Завдання 10">Завдання 10</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Масив об'єктів</h3>
+        <div class="task-buttons">
+          <button data-task5="array3" data-label="Масив об'єктів · Завдання 3">Завдання 3</button>
+          <button data-task5="array8" data-label="Масив об'єктів · Завдання 8">Завдання 8</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Деструктуризація об'єктів</h3>
+        <div class="task-buttons">
+          <button data-task5="destruct3" data-label="Деструктуризація об'єктів · Завдання 3">Завдання 3</button>
+          <button data-task5="destruct7" data-label="Деструктуризація об'єктів · Завдання 7">Завдання 7</button>
+          <button data-task5="destruct10" data-label="Деструктуризація об'єктів · Завдання 10">Завдання 10</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Callback-функції</h3>
+        <div class="task-buttons">
+          <button data-task5="callback3" data-label="Callback-функції · Завдання 3">Завдання 3</button>
+          <button data-task5="callback9" data-label="Callback-функції · Завдання 9">Завдання 9</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Стрілочні функції</h3>
+        <div class="task-buttons">
+          <button data-task5="arrow3" data-label="Стрілочні функції · Завдання 3">Завдання 3</button>
+          <button data-task5="arrow6" data-label="Стрілочні функції · Завдання 6">Завдання 6</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Стрілочні функції як колбеки</h3>
+        <div class="task-buttons">
+          <button data-task5="arrowCb3" data-label="Стрілочні функції як колбеки · Завдання 3">Завдання 3</button>
+          <button data-task5="arrowCb8" data-label="Стрілочні функції як колбеки · Завдання 8">Завдання 8</button>
+        </div>
+      </div>
+      <div class="task-group">
+        <h3>Перебираючі методи масиву</h3>
+        <div class="task-buttons">
+          <button data-task5="iter3" data-label="Перебираючі методи масиву · Завдання 3">Завдання 3</button>
+          <button data-task5="iter5" data-label="Перебираючі методи масиву · Завдання 5">Завдання 5</button>
+          <button data-task5="iter10" data-label="Перебираючі методи масиву · Завдання 10">Завдання 10</button>
+        </div>
+      </div>
+
+      <div class="task-group">
+        <h3>Стрілочні функції як колбеки · Завдання 5</h3>
+        <p>Кнопка з обробником події <code>click</code> (стрілочна функція):</p>
+        <div class="demo">
+          <button id="click-button" type="button">Натисни мене</button>
+          <p id="click-output" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="js/lesson-4.js"></script>
+  <script src="js/lesson-5.js"></script>
 </body>
 </html>

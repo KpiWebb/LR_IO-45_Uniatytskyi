@@ -1,122 +1,125 @@
 body {
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 2rem 1rem;
-    color: #1c1c1c;
-    background: #fafafa;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem 1rem;
+  color: #1c1c1c;
+  background: #fafafa;
 }
 
 main {
-    max-width: 42rem;
-    margin: 0 auto;
+  max-width: 42rem;
+  margin: 0 auto;
 }
 
+/* ---------- Калькулятор (завдання 9) ---------- */
 .calc {
-    max-width: 20rem;
-    padding: 1rem;
-    border: 1px solid #c9c9c9;
-    border-radius: 0.75rem;
-    background: #fff;
+  max-width: 20rem;
+  padding: 1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 0.75rem;
+  background: #fff;
 }
 
 .calc-screen {
-    min-height: 4.5rem;
-    margin-bottom: 0.75rem;
-    padding: 0.5rem 0.75rem;
-    text-align: right;
-    border-radius: 0.5rem;
-    background: #f0f0f0;
-    overflow: hidden;
+  min-height: 4.5rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  text-align: right;
+  border-radius: 0.5rem;
+  background: #f0f0f0;
+  overflow: hidden;
 }
 
 .calc-expression {
-    min-height: 1.25rem;
-    font-size: 0.9rem;
-    color: #666;
+  min-height: 1.25rem;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .calc-display {
-    font-size: 2rem;
-    font-variant-numeric: tabular-nums;
-    overflow-wrap: anywhere;
+  font-size: 2rem;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
 }
 
 .calc-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
 }
 
 .calc-keys button {
-    padding: 0.8rem 0;
-    font: inherit;
-    font-size: 1.1rem;
-    border: 1px solid #c9c9c9;
-    border-radius: 0.5rem;
-    background: #fafafa;
-    cursor: pointer;
+  padding: 0.8rem 0;
+  font: inherit;
+  font-size: 1.1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 0.5rem;
+  background: #fafafa;
+  cursor: pointer;
 }
 
-.calc-keys button:hover { 
-    background: #eee; 
-}
+.calc-keys button:hover { background: #eee; }
+.calc-keys button:focus-visible { outline: 2px solid #2a6fdb; outline-offset: 2px; }
+.calc-keys .op { background: #e6eefc; }
+.calc-keys .fn { background: #f3f0e6; }
+.calc-keys .eq { grid-column: span 3; background: #2a6fdb; color: #fff; border-color: #2a6fdb; }
+.calc-keys .eq:hover { background: #1f5bb8; }
 
-.calc-keys button:focus-visible { 
-    outline: 2px solid #2a6fdb; 
-    outline-offset: 2px; 
-}
-
-.calc-keys .op { 
-    background: #e6eefc; 
-}
-
-.calc-keys .fn { 
-    background: #f3f0e6; 
-}
-
-.calc-keys .eq { 
-    grid-column: span 3; 
-    background: #2a6fdb; 
-    color: #fff; 
-    border-color: #2a6fdb; 
-}
-
-.calc-keys .eq:hover { 
-    background: #1f5bb8; 
-}
-
+/* ---------- Кнопки завдань ---------- */
 .task-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-    gap: 0.5rem;
-    margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.5rem;
+  margin: 1.5rem 0;
 }
 
 .task-buttons button {
-    padding: 0.7rem 1rem;
-    font: inherit;
-    border: 1px solid #2a6fdb;
-    border-radius: 0.5rem;
-    background: #2a6fdb;
-    color: #fff;
-    cursor: pointer;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  border: 1px solid #2a6fdb;
+  border-radius: 0.5rem;
+  background: #2a6fdb;
+  color: #fff;
+  cursor: pointer;
 }
 
-.task-buttons button:hover { 
-    background: #1f5bb8; 
-}
-
-.task-buttons button:focus-visible { 
-    outline: 2px solid #1c1c1c; 
-    outline-offset: 2px; 
-}
+.task-buttons button:hover { background: #1f5bb8; }
+.task-buttons button:focus-visible { outline: 2px solid #1c1c1c; outline-offset: 2px; }
 
 .task-buttons button.secondary {
-    background: #fff;
-    color: #2a6fdb;
+  background: #fff;
+  color: #2a6fdb;
 }
 
-.task-buttons button.secondary:hover { 
-    background: #e6eefc; 
+.task-buttons button.secondary:hover { background: #e6eefc; }
+
+/* ---------- ЛР №5: групи завдань ---------- */
+.lab-section { margin-top: 2rem; }
+.lab-section h2 { font-size: 1.3rem; border-bottom: 2px solid #2a6fdb; padding-bottom: 0.25rem; }
+.task-group { margin-top: 1.25rem; }
+.task-group h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.task-group .task-buttons { margin: 0; }
+
+.demo { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.demo button {
+  padding: 0.7rem 1.2rem;
+  font: inherit;
+  border: 1px solid #2a6fdb;
+  border-radius: 0.5rem;
+  background: #2a6fdb;
+  color: #fff;
+  cursor: pointer;
 }
+.demo button:hover { background: #1f5bb8; }
+
+.secondary-btn {
+  padding: 0.6rem 1rem;
+  font: inherit;
+  border: 1px solid #2a6fdb;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #2a6fdb;
+  cursor: pointer;
+}
+.secondary-btn:hover { background: #e6eefc; }
